@@ -30,7 +30,8 @@ def snippet_details(request):
 			a.save()
 
 			print("Valid")
-	
+			return render(request, 'welcome.html')
+		
 	form = SnippetForm(request.POST,request.FILES)
 	return render(request, 'form.html', {'form':form})
 	
