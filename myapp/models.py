@@ -9,6 +9,11 @@ class Trial(models.Model):
 	city=models.CharField(max_length=100)
 	profile_image = models.ImageField(upload_to='images/')
 
-
+class SignUp(models.Model):
+	username=models.CharField(max_length=100)
+	password=models.CharField(max_length=100)
+	
+	city=models.CharField(max_length=100)
+	
 	def __str__(self):
 		return self.name 

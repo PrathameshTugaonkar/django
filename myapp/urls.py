@@ -20,9 +20,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-	path('',views.contact),
+	#path('',views.login_details),
+	path('',views.snippet_details),
+
+	path('old',views.contact),
 	
-	path('snippet',views.snippet_details)
+	path('snippet',views.snippet_details),
+	
     
 ]
 if settings.DEBUG:
